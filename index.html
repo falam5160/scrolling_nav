@@ -1,196 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Minimo</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Navigation</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<!-- Header start -->
-	<header>
-		<div class="container">
-			<div class="logo">
-				<img src="images/logo.png" alt="Minimo">
-			</div>
 
-			<nav class="menu">
-				<ul>
-					<li><a href="#">lifestyle</a></li>
-					<li><a href="#">photodiary</a></li>
-					<li><a href="#">travel</a></li>
-					<li><a href="#">music</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!-- Header end -->
+    <h1 class="tanbir">
+        <span class="subt">Developer</span>
+        <span class="title">ALAM</span>
+    </h1>
 
-	<!-- Banner start -->
-	<section class="banner">
-		<div class="container">
-			<div class="banner_img">
-				<img src="images/banner.jpg" alt="Minimo">
-			</div>
-		</div>
-	</section>
-	<!-- Banner end -->
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="images-outline"></ion-icon>
+                    </span>
+                    <span class="text">Portfolio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
 
-	<!-- About start -->
-	<section class="about">
-		<div class="container2">
-			<div class="about_content">
-				<p class="cmn_tag">photodiary</p>
-				<h1 class="cmn_title">The perfect weekend getaway</h1>
-				<p class="cmn_para mb_40">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-				<p class="cmn_tag">Leave a comment</p>
-			</div>
-		</div>
-	</section>
-	<!-- About end -->
 
-	<!-- Blog start -->
-	<section class="blog">
-		<div class="container2">
-			<div class="blog_content">
-				<!-- Single blog start -->
-				<div class="single_blog">
-					<div class="sb_img">
-						<img src="images/blog_1.jpg" alt="Minimo">
-					</div>
-					<p class="cmn_tag">lifestyle</p>
-					<h2 class="cmn_title">More than just a music festival</h2>
-					<p class="cmn_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</div>
-				<!-- Single blog end -->
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activelink() {
+            list.forEach((item) => {
+                item.classList.remove('active');
+                this.classList.add('active')
+            } )
+        }
+        list.forEach((item) => item.addEventListener('click', activelink))
+    </script>
+    
 
-				<!-- Single blog start -->
-				<div class="single_blog">
-					<div class="sb_img">
-						<img src="images/blog_2.jpg" alt="Minimo">
-					</div>
-					<p class="cmn_tag">lifestyle</p>
-					<h2 class="cmn_title">Life tastes better with coffee</h2>
-					<p class="cmn_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</div>
-				<!-- Single blog end -->
-
-				<!-- Single blog start -->
-				<div class="single_blog">
-					<div class="sb_img">
-						<img src="images/blog_3.jpg" alt="Minimo">
-					</div>
-					<p class="cmn_tag">photodiary</p>
-					<h2 class="cmn_title">American dream</h2>
-					<p class="cmn_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</div>
-				<!-- Single blog end -->
-
-				<!-- Single blog start -->
-				<div class="single_blog">
-					<div class="sb_img">
-						<img src="images/blog_4.jpg" alt="Minimo">
-					</div>
-					<p class="cmn_tag">photodiary</p>
-					<h2 class="cmn_title">A day exploring the Alps</h2>
-					<p class="cmn_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</div>
-				<!-- Single blog end -->
-			</div>
-		</div>
-	</section>
-	<!-- Blog end -->
-
-	<!-- Newsletter start -->
-	<section class="news">
-		<div class="container2">
-			<div class="news_content">
-				<h1 class="nl_title">Sign up for our newsletter!</h1>
-
-				<form action="" method="" class="nl_form">
-					<input type="email" name="" placeholder="Enter a valid email address" value="">
-
-					<button type="button">
-						<img src="images/send_icon.png" alt="Minimo">
-					</button>
-				</form>
-			</div>
-		</div>
-	</section>
-	<!-- Newsletter end -->
-
-	<!-- Blog2 start -->
-	<section class="blog">
-		<div class="container2">
-			<div class="blog_content">
-				<!-- Single blog start -->
-				<div class="single_blog">
-					<div class="sb_img">
-						<img src="images/blog_5.jpg" alt="Minimo">
-					</div>
-					<p class="cmn_tag">lifestyle</p>
-					<h2 class="cmn_title">Top 10 song for running</h2>
-					<p class="cmn_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</div>
-				<!-- Single blog end -->
-
-				<!-- Single blog start -->
-				<div class="single_blog">
-					<div class="sb_img">
-						<img src="images/blog_6.jpg" alt="Minimo">
-					</div>
-					<p class="cmn_tag">lifestyle</p>
-					<h2 class="cmn_title">Cold winter days</h2>
-					<p class="cmn_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</div>
-				<!-- Single blog end -->
-			</div>
-
-			<div class="loadmore">
-				<button class="lm_btn">Load more</button>
-			</div>
-		</div>
-	</section>
-	<!-- Blog2 end -->
-
-	<!-- Back to top start -->
-	<section class="bttop">
-		<div class="bttop_content">
-			<button class="bttop_btn">
-				Back to <br> Top
-			</button>
-		</div>
-	</section>
-	<!-- Back to top end -->
-
-	<!-- Footer start -->
-	<footer>
-		<div class="container">
-			<div class="f_content">
-				<div class="term">
-					<ul>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Privacy</a></li>
-					</ul>
-				</div>
-				<div class="follow">
-					<ul>
-						<li><span>Follow</span></li>
-						<li><a href="#">
-							<img src="images/facebook.png" alt="Minimo">
-						</a></li>
-						<li><a href="#">
-							<img src="images/twitter.png" alt="Minimo">
-						</a></li>
-						<li><a href="#">
-							<img src="images/instagram.png" alt="Minimo">
-						</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer end -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
